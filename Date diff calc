@@ -1,0 +1,15 @@
+import datetime
+
+f_yy = int(input("Enter the first year:"))
+f_mm = int(input("Enter the first month:"))
+f_dd = int(input("Enter the first day:"))
+s_yy = int(input("Enter the second year:"))
+s_mm = int(input("Enter the second month:"))
+s_dd = int(input("Enter the second day:"))
+
+f_date = datetime.date(f_yy, f_mm, f_dd)
+s_date = datetime.date(s_yy, s_mm, s_dd)
+
+difference = s_date - f_date
+
+print(difference.days)
