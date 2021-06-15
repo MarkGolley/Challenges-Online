@@ -1,0 +1,31 @@
+# Write a Python program to get a new string from a given string
+# where "Is" has been added to the front. If the given string
+# already begins with "Is" then return the string unchanged
+
+
+
+
+given_string = input("What is the string you want to provide?")
+
+def return_string(given_string):
+    if given_string[0] == "I" and given_string[1] == "s":
+        print(given_string)
+    else:
+        given_string = given_string.lower()
+        print("Is " + given_string)
+
+return_string(given_string)
+
+
+
+or
+
+
+
+def new_string(str):
+  if len(str) >= 2 and str[:2] == "Is":
+    return str
+  return "Is" + str
+
+print(new_string("Array"))
+print(new_string("IsEmpty"))
