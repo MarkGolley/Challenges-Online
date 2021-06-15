@@ -1,0 +1,13 @@
+# Write a Python program to get a string which is n
+# (non-negative integer) copies of a given string
+
+given_string = str(input("What is the given string?"))
+n = int(input("How many copies?"))
+
+def return_string(given_string, n):
+    strung = ""
+    for i in range(n):
+        strung = strung + given_string
+    return strung
+
+print(return_string(given_string, n))
