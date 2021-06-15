@@ -1,0 +1,20 @@
+# Write a Python program to get the n (non-negative integer)
+# copies of the first 2 characters of a given string.
+# Return the n copies of the whole string if the length is less than 2.
+
+
+g_str = str(input("What is the given string?"))
+n = int(input("What is the number of copies?"))
+
+def ret_str(g_str, n):
+    flen = 2
+    if flen > len(g_str):
+        flen = len(g_str)
+    sub_str = g_str[:flen]
+
+    result = ""
+    for i in range(n):
+        result = result + sub_str
+    return result
+
+print(ret_str(g_str, n))
