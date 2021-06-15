@@ -1,0 +1,16 @@
+13 lines (10 sloc)  345 Bytes
+Raw Blame
+    
+# Write a Python program to count the number 4 in a given list
+
+num_list = [0, 44, 56, 676, 43, 76 , 4 , 67, 784, 4, 76, 24, 4]
+n = int(input("What number do you want to search for?"))
+
+def check_4(num_list,n):
+    count = 0
+    for things in num_list:
+        if things == n:
+            count += 1
+    return count
+
+print(check_4(num_list,n))
