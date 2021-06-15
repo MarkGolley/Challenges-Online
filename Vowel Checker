@@ -1,0 +1,23 @@
+ Write a Python program to test whether a passed letter is a vowel or not
+
+passed = input("What is the letter to check?")
+
+def vowel_check(passed):
+    vowels = ["a", "e", "i", "o", "u"]
+    if passed == vowels[:5]:
+        return "It is a vowel"
+    else:
+        return "It is not a vowel"
+print(vowel_check(passed))
+
+
+
+
+
+or the online solution was 
+
+def is_vowel(char):
+    all_vowels = 'aeiou'
+    return char in all_vowels
+print(is_vowel('c'))
+print(is_vowel('e'))
