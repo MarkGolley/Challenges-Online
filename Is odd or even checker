@@ -1,0 +1,28 @@
+# Write a Python program to find whether a given
+# number (accept from the user) is even or odd,
+# print out an appropriate message to the user.
+
+n = int(input("What is the given number?"))
+
+def odd_even(n):
+    if n % 2 > 0:
+        return "Odd"
+    else:
+        return "Even"
+
+print("The value was: " + odd_even(n))
+
+
+
+
+
+or
+
+
+
+num = int(input("Enter a number: "))
+mod = num % 2
+if mod > 0:
+    print("This is an odd number.")
+else:
+    print("This is an even number.")
