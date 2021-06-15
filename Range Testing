@@ -1,0 +1,14 @@
+#Write a Python program to test whether a number is within 100 of 1000 or 2000
+
+def test_num(n):
+    if n in range(900,1100) or n in range(1900,2100):
+        return("was")
+    else:
+        return("was not")
+print("The number " + test_num(1000) +  " in range")
+
+
+or 
+
+def near_thousand(n):
+      return ((abs(1000 - n) <= 100) or (abs(2000 - n) <= 100))
